@@ -272,20 +272,7 @@
     <script src="localforage.js"></script>
     <script src="pako.min.js"></script>
     <script src="app.js"></script>
-    <script>
-        var jsFile = "build/nds.js";
-        if (localStorage) {
-            if (localStorage['simd'] == "1") {
-                jsFile = "build-simd/nds.js";
-            }
-            if (localStorage['showEA'] == "1") {
-                $id('cfg-ea').hidden = false;
-            }
-        }
-        var script = document.createElement('script');
-        script.src = jsFile;
-        document.body.appendChild(script);
-    </script>
+    <script src="build/nds.js"></script>
 
 </body>
 
